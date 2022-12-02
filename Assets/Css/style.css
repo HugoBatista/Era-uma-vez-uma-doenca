@@ -1,4 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 body{
-    background-color: #93CDE0;
-   
+    font-family: 'Open Sans', sans-serif;
+    background-color: darkgray;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #474747;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#08404e, #381faa);
+    border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NavBar */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+/* */
+
+/*Peste Negra ---------------------------------------------------------*/
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 300px;
+    width: 250px;
+    border-radius: 18px;
+    left: 80px;
+    overflow: hidden;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 9px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(transparent, black);
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out 0ms;
+
+    border-radius: 18px;
+    z-index: 1;
+
+}
+
+.card-img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    transition: trandform 250ms ease-in-out 0ms;
+    
+}
+
+.card:hover::before{
+    opacity: 0.8;
+}
+
+.card:hover .card-img{
+    transform: scale(1.1);
+}
+h3{
+    font-size: 24px;
+    margin:  8px 0;
+}
+
+p,h3 {
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/*End Peste Negra ----------------------------------------------------------*/
+
+/* Corona Virus ---------------------------------------------------------*/
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 300px;
+    width: 250px;
+    left: 20%;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 9px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.card2::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(transparent, black);
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out 0ms;
+
+    border-radius: 18px;
+    z-index: 1;
+
+}
+
+.card2-img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    transition: trandform 250ms ease-in-out 0ms;
+    
+}
+
+.card2:hover::before{
+    opacity: 0.8;
+}
+
+.card2:hover .card2-img{
+    transform: scale(1.1);
+}
+h3{
+    font-size: 24px;
+    margin:  8px 0;
+}
+
+p,h3 {
+    color: white;
+    font-weight: bold;
+    z-index: 2;
 }

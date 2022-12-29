@@ -1,10 +1,8 @@
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "../Images/menu_white_36dp.svg";
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
     } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "../Images/close_white_36dp.svg";
+      x.className = "topnav";
     }
-}
+  }

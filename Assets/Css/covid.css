@@ -683,14 +683,3 @@ a.read_more:hover {
 #myBtn:hover {
     background-color: #7dbbf1;
 }
-
-
-.footer {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #444444;
-    text-align: center;
-  }  

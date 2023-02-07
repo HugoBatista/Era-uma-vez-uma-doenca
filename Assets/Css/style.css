@@ -152,7 +152,7 @@ html {
     }
   }
 
-  .footer {
+  footer {
     height: 50px;
     flex-shrink: 0;
     padding: 1rem;

@@ -6,9 +6,13 @@ body{
     background-color: #181818;
     text-align: center;
     align-items: center;
-    margin-left: 0px;
-    background-image: url(../Images/fundo-slide-medieval.png);
     
+    background-image: url(../Images/fundo-slide-medieval.png);
+}
+
+main{
+  margin: auto;
+    margin-bottom: 30px;
 }
 
 :root{
@@ -314,9 +318,8 @@ a.read_more:hover {
 
 
 footer {
-  height: 50px;
-  flex-shrink: 0;
-  padding: 1rem;
-  background-color:var(--cor05);
   text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
+  background-color:var(--cor05);
   }  

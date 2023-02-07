@@ -9,6 +9,12 @@ body{
     margin-left: 0px;
 }
 
+
+main{
+  margin: auto;
+    margin-bottom: 30px;
+}
+
 :root{
   --cor00: #865C2C;
   --cor01: #2c1608;
@@ -153,9 +159,8 @@ html {
   }
 
   footer {
-    height: 50px;
-    flex-shrink: 0;
-    padding: 1rem;
-    background-color:var(--cor05);
     text-align: center;
-  }  
+    font-size: 0.8em;
+    padding: 5px;
+    background-color:var(--cor05);
+    }  

@@ -158,10 +158,3 @@ html {
   }
 }
 
-footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  padding: 5px;
-  background-color:var(--cor05);
-}  

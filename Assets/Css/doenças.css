@@ -319,9 +319,12 @@ a.read_more:hover {
 
 
 footer {
-  position: relative;
   width: 100%;
-  bottom: 0;
-  padding: 5px;
-  background-color:var(--cor05);
-}  
+  padding: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--cor01);
+  color: #ffffff;
+  box-sizing: border-box;
+}

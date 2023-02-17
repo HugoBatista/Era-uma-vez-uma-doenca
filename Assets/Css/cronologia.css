@@ -6,10 +6,14 @@ body{
     background-color: #181818;
     text-align: center;
     align-items: center;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 0px;
 }
 
+
+main{
+  margin: auto;
+  margin-bottom: 30px;
+}
 
 :root{
   --cor00: #865C2C;
@@ -59,11 +63,10 @@ html {
 .nav {
   height: 50px;
   padding-left: 10px;
-  padding-right: 10px;
   width: 100%;
   background-color: var(--cor01);
   box-shadow: 0px 3px 10px var(--cor00);
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 15px;
   position: relative;
   margin-top: -7px;
 }
@@ -98,7 +101,7 @@ html {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: var(--cor00);
+  color: var(--cor00)
 }
 
 .nav > .nav-links > a:hover {
@@ -109,7 +112,7 @@ html {
   display: none;
 }
 
-@media (max-width:757px) {
+@media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -129,7 +132,7 @@ html {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid var(--cor00);
+    border-top: 2px solid var(--cor04);
   }
   .nav > .nav-links {
     position: absolute;
@@ -141,7 +144,6 @@ html {
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    text-shadow: 1px 1px #ffffff;
   }
   .nav > .nav-links > a {
     display: block;
@@ -155,101 +157,4 @@ html {
     overflow-y: auto;
   }
 }
-
-/* start-main */
-
-main{
-  min-width: 300px;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 30px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 20px;
-  background-color: var(--cor06);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
-}
-
-main h1, h2{
- 
-  font-weight: normal;
-}
-
-main h1{
-  color:var(--cor00);
-  font-size: 1.8em;
-}
-
-main h2{
-  color: var(--cor04);
-  font-size: 1.3em;
-  background-image: linear-gradient(to right, var(--cor00), transparent);
-  text-indent: 0.8em;
-}
-
-main a{
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--cor05);
-  background-color: var(--cor01);
-  padding: 2px 5px;
-}
-
-main a:hover{
-  text-decoration: underline;
-  color: var(--cor04);
-}
-
-main p{
-  margin: 15px 0px;
-  text-align: justify;
-  text-indent: 2em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-main img{
-  width: 100%;
-}
-
-main img.pequena{
-  max-width: 350px;
-  display: block;
-  margin: auto;
-}
-
-p{
-  color:var(--cor04);
-}
-
-/* End-Main */
-
-
-
-
-/* Start-Aside */
-
-aside{
-  font-family: var(--font-padrao);
-  background-color: var(--cor01);
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
-}
-
-aside h3{
-  background-color: var(--cor04);
-  color: var(--cor06);
-  padding: 8px;
-  margin: -10px -10px 0px -10px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-aside ul{
-  list-style-type: '\2714\00A0';
-  list-style-position: inside;
-  columns: 2;
-}
-
-/* End-Aside */
 

@@ -25,7 +25,7 @@ html {
 body{
   flex-direction: column;
   font-family: 'Fredoka One', cursive;
-  background-color: var(--cor05);
+  background-color: var(--cor06);
   text-align: center;
   align-items: center;
   margin-left: 0px;
@@ -40,6 +40,7 @@ body{
   --cor03: #000000;
   --cor04: #ffffff;
   --cor05: #444444;
+  --cor06: #181818;
 }
 
 h1{
@@ -61,10 +62,11 @@ a:visited {
 .nav {
   height: 50px;
   padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
   background-color: var(--cor01);
   box-shadow: 0px 3px 10px var(--cor00);
-  border-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
   position: relative;
   margin-top: -7px;
 }
@@ -97,7 +99,7 @@ a:visited {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 13px 60px 13px 10px;
   text-decoration: none;
   color: var(--cor00)
 }
@@ -181,12 +183,7 @@ main h1{
   font-size: 1.8em;
 }
 
-main h2{
-  color: var(--cor04);
-  font-size: 1.3em;
-  background-image: linear-gradient(to right, var(--cor00), transparent);
-  text-indent: 0.8em;
-}
+
 
 main a{
   text-decoration: none;
@@ -225,14 +222,77 @@ p{
 
 /* End-Main */
 
+/* card */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
+
+
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  gap: 4%;
+  margin: 5% 0;
+}
+
+.card {
+
+  overflow: hidden;
+  padding: 12px;
+  background-color: var(--cor01) ;
+  box-shadow: 0px 3px 13px var(--cor00);
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+.card_img img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.card_body {
+  padding: 30px 40px ;
+}
+
+.card_title {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 26px;
+  color: var(--cor00);
+  padding-bottom: 20px;
+}
+
+.card_body p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+
+}
+
+.card:hover{
+  background-color: var(--cor06);
+  color: white;
+}
 
 /* Start-Aside */
 
 aside{
   font-family: var(--font-padrao);
-  background-color: var(--cor01);
+  background-color: var(--cor05);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
@@ -254,6 +314,15 @@ aside ul{
 
 /* End-Aside */
 
+article{
+    font-family: var(--font-padrao);
+    background-color: var(--cor05);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+  
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -264,4 +333,26 @@ footer {
   background: var(--cor01);
   color: #ffffff;
   box-sizing: border-box;
+}
+
+#respond {
+  margin-top: 40px;
+}
+
+#respond input[type='text'],
+#respond input[type='email'],
+#respond textarea {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+
+  line-height: 1.4em;
 }

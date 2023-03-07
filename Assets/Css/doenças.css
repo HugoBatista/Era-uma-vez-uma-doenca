@@ -3,7 +3,7 @@
 body{
     flex-direction: column;
     font-family: 'Fredoka One', cursive;
-    background-color: #181818;
+    background-color: var(--cor06);
     text-align: center;
     align-items: center;
     min-width: 340px;
@@ -23,6 +23,7 @@ main{
   --cor03: #000000;
   --cor04: #ffffff;
   --cor05: #444444;
+  --cor06: #181818;
 }
 
 h1{
@@ -101,7 +102,7 @@ html {
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 13px 60px 13px 10px;
     text-decoration: none;
     color: var(--cor00);
   }

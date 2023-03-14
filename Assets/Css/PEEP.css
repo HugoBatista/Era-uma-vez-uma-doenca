@@ -197,6 +197,7 @@ main a:hover{
 }
 
 main p{
+  color:var(--cor04);
   margin: 15px 0px;
   text-align: justify;
   text-indent: 2em;

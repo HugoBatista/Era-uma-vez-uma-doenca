@@ -203,3 +203,14 @@ main p{
   line-height: 1.5em;
 }
 
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.8rem;
+}
+textarea{
+  border-radius: 10px;
+}

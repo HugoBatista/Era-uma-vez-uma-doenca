@@ -60,7 +60,7 @@ a:visited {
 /* Start-Nav */
   
 .nav {
-  height: 50px;
+  height: 90px;
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
@@ -99,7 +99,7 @@ a:visited {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 60px 13px 10px;
+  padding: 13px 40px 13px 10px;
   text-decoration: none;
   color: var(--cor00)
 }

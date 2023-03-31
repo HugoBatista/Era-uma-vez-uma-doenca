@@ -25,9 +25,7 @@ main{
   --cor06: #181818;
 }
 
-h1{
-    text-align: center;
-}
+
 
 
 
@@ -109,7 +107,7 @@ html {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:1222px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -175,6 +173,7 @@ main h1, h2{
 main h1{
   color:var(--cor00);
   font-size: 1.8em;
+  word-break: break-word;
 }
 
 main h2{

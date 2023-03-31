@@ -21,18 +21,6 @@ body{
   --cor06: #181818;
 }
 
-h1{
-    text-align: center;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:visited {
-    color: var(--cor03);
-}
-
 ::-webkit-scrollbar{
     width: 20px;
     height: 20px;
@@ -110,7 +98,7 @@ html {
   display: none;
 }
 
-@media (max-width:757px) {
+@media (max-width:1222px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -191,14 +179,13 @@ main h2{
 main a{
   text-decoration: none;
   font-weight: bold;
-  color: var(--cor05);
-  background-color: var(--cor01);
+  color: var(--cor04);
   padding: 2px 5px;
 }
 
 main a:hover{
   text-decoration: underline;
-  color: var(--cor04);
+  color: var(--cor00);
 }
 
 main p{

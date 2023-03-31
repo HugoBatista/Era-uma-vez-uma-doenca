@@ -29,13 +29,9 @@ h1{
     text-align: center;
 }
 
-a{
-    text-decoration: none;
-}
 
-a:visited {
-    color: var(--cor03);
-}
+
+
 
 ::-webkit-scrollbar{
     width: 20px;
@@ -181,14 +177,20 @@ main h1{
   font-size: 1.8em;
 }
 
-
+main h2{
+  color: var(--cor04);
+}
+main h3{
+  text-align: left;
+  color: var(--cor04);
+}
 
 main a{
   text-decoration: none;
   font-weight: bold;
-  color: var(--cor05);
-  background-color: var(--cor01);
+  color: var(--cor04);
   padding: 2px 5px;
+  
 }
 
 main a:hover{
@@ -203,4 +205,8 @@ main p{
   text-indent: 2em;
   font-size: 1em;
   line-height: 1.5em;
+}
+
+aside li{
+  color: var(--cor04);
 }

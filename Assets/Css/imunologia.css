@@ -25,17 +25,11 @@ main{
   --cor06: #181818;
 }
 
-h1{
-    text-align: center;
-}
 
-a{
-    text-decoration: none;
-}
 
-a:visited {
-    color: var(--cor03);
-}
+
+
+
 
 ::-webkit-scrollbar{
     width: 20px;
@@ -113,7 +107,7 @@ html {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:1222px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -159,3 +153,71 @@ html {
   }
 }
 
+main{
+  min-width: 300px;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  background-color: var(--cor06);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+main h1, h2, h3{
+ 
+  font-weight: normal;
+}
+
+main h1{
+  color:var(--cor00);
+  font-size: 2.6em;
+  word-break: break-word;
+}
+
+main h2{
+  font-size: 2.3em;
+  color: var(--cor04);
+}
+main h3{
+  font-size: 1.5em;
+  text-align: left;
+  color: var(--cor04);
+}
+
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor04);
+  
+  
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: var(--cor04);
+}
+
+main p{
+  color: var(--cor04);
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.quarentena{
+  max-width: 100%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+li{
+  font-family: var(--font-Rockwell);
+  text-align: left;
+  color: var(--cor04);
+  font-size: 1.2em;
+}

@@ -190,8 +190,6 @@ main p{
   box-sizing: border-box;
 }
 
-
-
 .card {
   display: flex;
   flex :100%;
@@ -200,10 +198,7 @@ main p{
   padding: 30px;
   margin: 10px;
   border-radius: 12px;
-  
- 
 }
-
 
 .card_img  {
   height: 250px;
@@ -221,8 +216,6 @@ main p{
   border: 5px solid var(--cor01)
 }
 
-
-
 .card_title {
   font-family: 'Fredoka One', cursive;
   font-weight: 900;
@@ -232,22 +225,19 @@ main p{
   padding-bottom: 20px;
 }
 
-.overlay{
-  opacity: 0;
-}
-
-.overlay:hover{
-  opacity: 1;
-}
-
 .card:hover{
   background-color: var(--cor01);
-  
 }
 
-.card.description:hover{
+.description {
+  display: none;
+}
+    
+.card_title:hover + .description {
+  display: block;
   color: var(--cor04);
 }
+
 /* Start-Aside */
 
 aside{

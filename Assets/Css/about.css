@@ -1,36 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-::-webkit-scrollbar{
-    width: 20px;
-    height: 20px;
-}
-
-::-webkit-scrollbar-track{
-    background-color: var(--cor04); 
-}
-
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(var(--cor01), var(--cor00), var(--cor01));
-    border-radius: 5px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body{
   flex-direction: column;
-  font-family: 'Fredoka One', cursive;
-  background-color: var(--cor06);
+  font-family: var(--font-Normal);
+  background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper3.jpg);
   text-align: center;
   align-items: center;
   margin-left: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
+  margin: 8px;
+}
+
+
+main{
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 :root{
@@ -41,34 +25,46 @@ body{
   --cor04: #ffffff;
   --cor05: #444444;
   --cor06: #181818;
+  --cor07: #1B0A06;
+  --cor08: #3E3226;
+  --font-Pirata: 'Pirata One', cursive;
+  --font-Normal: 'Josefin Sans', sans-serif;
 }
 
-h1{
-    text-align: center;
+::-webkit-scrollbar{
+    width: 20px;
+    height: 20px;
 }
 
-a{
-    text-decoration: none;
+::-webkit-scrollbar-track{
+    background-color: var(--cor08); 
 }
 
-a:visited {
-    color: var(--cor03);
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--cor01), var(--cor00), var(--cor01));
+    border-radius: 5px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+* {
+    box-sizing: border-box;
+  }
   
-/* Start-Nav */
+
   
 .nav {
   height: 50px;
   padding-left: 10px;
-  padding-right: 10px;
   width: 100%;
-  background-color: var(--cor01);
-  box-shadow: 0px 3px 10px var(--cor00);
+  background-color: var(--cor07);
+  box-shadow: 8px 10px 14px var(--cor03);
   border-radius: 0px 0px 15px 15px;
   position: relative;
-  margin-top: 0px;
+  margin-top: -8px;
+  margin-right: 10px;
 }
 
 .nav > .nav-header {
@@ -94,14 +90,15 @@ a:visited {
 .nav > .nav-links {
   display: inline;
   float: center;
-  font-size: 18px;
+  font-size: 1.8em;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 40px 13px 10px;
+  padding: 10px 25px 3px 10px;
   text-decoration: none;
-  color: var(--cor00)
+  color: var(--cor08); 
+  font-family: var(--font-Pirata); 
 }
 
 .nav > .nav-links > a:hover {
@@ -112,7 +109,7 @@ a:visited {
   display: none;
 }
 
-@media (max-width:1222px) {
+@media (max-width:910px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -126,7 +123,7 @@ a:visited {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: var(--cor01);
+    background-color: var(--cor07);
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -138,7 +135,7 @@ a:visited {
     position: absolute;
     display: block;
     width: 100%;
-    background-image: url(../Images/menu\ img.png);
+    background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper2.jpg);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -157,26 +154,62 @@ a:visited {
     overflow-y: auto;
   }
 }
-/* End-Nav */
-
-/* start-main */
 
 main{
   min-width: 300px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 20px;
-  background-color: var(--cor06);
+  background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper5.jpg);
+  background-size: contain;
+  
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
 }
+
+main h1, h2, h3{
+  font-family: var(--font-Pirata);
+  font-weight: normal;
+}
+
+main h1{
+  color:var(--cor01);
+  font-size: 6em;
+  word-break: break-word;
+}
+
+main h2{
+  font-size: 81px;
+  color: var(--cor01);
+}
+main h3{
+  font-size: 2em;
+  text-align: left;
+  color: var(--cor01);
+}
+
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor04);
+  padding: 2px 5px;
+  
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: var(--cor04);
+}
+
 main p{
+  font-family: var(--font-Normal);
+  color: var(--cor01);
   margin: 15px 0px;
   text-align: justify;
   text-indent: 2em;
-  font-size: 1em;
+  font-size: 1.8em;
   line-height: 1.5em;
 }
 

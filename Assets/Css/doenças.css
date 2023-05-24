@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 
 body{
     flex-direction: column;
-    font-family: 'Fredoka One', cursive;
-    background-color: var(--cor06);
+    font-family: var(--font-Normal);
+    background-color: #181818;
     text-align: center;
     align-items: center;
-    min-width: 340px;
-    background-image: url(../Images/fundo-slide-medieval.png);
-    
-}
-
-main{
-    margin-bottom: 30px;
-    
+    margin-left: 0px;
+    background-image: url(../Images/Wallpaper3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 8px;
 }
 
 :root{
@@ -24,6 +24,10 @@ main{
   --cor04: #ffffff;
   --cor05: #444444;
   --cor06: #181818;
+  --cor07: #1B0A06;
+  --cor08: #3E3226;
+  --font-Pirata: 'Pirata One', cursive;
+  --font-Normal: 'Josefin Sans', sans-serif;
 }
 
 h1{
@@ -33,7 +37,6 @@ h1{
 a{
     text-decoration: none;
 }
-
 a:visited {
     color: var(--cor03);
   }
@@ -45,12 +48,12 @@ a:visited {
 }
 
 ::-webkit-scrollbar-track{
-    background-color: var(--cor00);
+  background-color: var(--cor08); 
     
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(var(--cor01), var(--cor00), var(--cor01));
+    background: linear-gradient(var(--cor01), var(--cor00));
     border-radius: 5px;
 }
 
@@ -64,102 +67,105 @@ html {
   
 /*navbar*/
   
-  .nav {
-    height: 50px;
-    padding-left: 10px;
-    width: 100%;
-    background-color: var(--cor01);
-    box-shadow: 0px 3px 10px var(--cor00);
-    border-radius: 0px 0px 15px 15px;
-    position: relative;
-  }
-  
-  .nav > .nav-header {
-    display: inline;
-  }
-  
-  .nav-title
-  {
-    float: left;
-  }
+.nav {
+  height: 50px;
+  padding-left: 10px;
+  width: 100%;
+  background-color: var(--cor07);
+  box-shadow: 8px 10px 14px var(--cor03);
+  border-radius: 0px 0px 15px 15px;
+  position: relative;
+  margin-top: -8px;
+  margin-right: 10px;
+}
 
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: var(--cor04);
-    padding: 10px 10px 10px 10px;
-  }
-  
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav-title
+{
+  float: left;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: var(--cor04);
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: center;
+  font-size: 1.8em;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 10px 25px 3px 10px;
+  text-decoration: none;
+  color: var(--cor08); 
+  font-family: var(--font-Pirata); 
+}
+
+.nav > .nav-links > a:hover {
+  background-color: var(--cor02);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:910px) {
   .nav > .nav-btn {
-    display: none;
-  }
-  
-  .nav > .nav-links {
-    display: inline;
-    float: center;
-    font-size: 18px;
-  }
-  
-  .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 60px 13px 10px;
-    text-decoration: none;
-    color: var(--cor00);
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-  
-  .nav > .nav-links > a:hover {
-    background-color: var(--cor02);
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
-  
-  .nav > #nav-check {
-    display: none;
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: var(--cor07);
   }
-  
-  @media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: var(--cor01);
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid var(--cor04);
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-image: url(../Images/menu\ img.png);
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid var(--cor04);
   }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
 
 /*card*/
 
@@ -187,11 +193,10 @@ html {
 }
 
 .card {
-  
     overflow: hidden;
     padding: 20px;
-    background-color: var(--cor01) ;
-    box-shadow: 0px 3px 13px var(--cor00);
+    background-color: var(--cor07);
+    box-shadow: 8px 6px 16px var(--cor03);
     border-radius: 30px;
     text-align: center;
 }
@@ -208,11 +213,11 @@ html {
 }
 
 .card_title {
-    font-family: 'Fredoka One', cursive;
+    font-family: var(--font-Pirata);
     font-weight: 900;
     text-transform: capitalize;
-    font-size: 26px;
-    color: var(--cor00);
+    color: var(--cor08);
+    font-size: 45px;
     padding-bottom: 20px;
 }
 
@@ -223,16 +228,16 @@ html {
 
 }
 
-
 a.read_more {
-    color: var(--cor01);
-    font-size: 13px;
+    color: var(--cor08);
+    font-size: 25px;
     text-decoration: none;
     letter-spacing: 1.1px;
-    background: var(--cor00);
+    font-family: var(--font-Pirata);
+    background: var(--cor03);
     margin-top: 25px;
     margin-bottom: 25px;
-    padding: 24px 0px 24px 0px;
+    padding: 24px 0px;
     border-radius: 15px;
     display: inline-block;
     width: 50%;
@@ -243,6 +248,8 @@ a.read_more:hover {
     box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.15);
     background: var(--cor04);
 }
+
+
 
 @media only screen and (max-width: 1441px) and (min-width: 1025px) {
     .container {
@@ -316,4 +323,3 @@ a.read_more:hover {
     }
     
 }
-

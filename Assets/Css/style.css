@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body{
-    flex-direction: column;
-    font-family: 'Fredoka One', cursive;
-    background-color: var(--cor06);
+  flex-direction: column;
+    font-family: var(--font-Normal);
+    background-color: #181818;
     text-align: center;
     align-items: center;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 0px;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 8px;
+  background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper.jpg);
+  
 }
 
 
@@ -19,6 +26,10 @@ body{
   --cor04: #ffffff;
   --cor05: #444444;
   --cor06: #181818;
+  --cor07: #1B0A06;
+  --cor08: #3E3226;
+  --font-Pirata: 'Pirata One', cursive;
+  --font-Normal: 'Josefin Sans', sans-serif;
 }
 
 ::-webkit-scrollbar{
@@ -45,117 +56,117 @@ html {
   
 
   
-.nav {
-  height: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
-  background-color: var(--cor01);
-  box-shadow: 0px 3px 10px var(--cor00);
-  border-radius: 0px 0px 15px 15px;
-  position: relative;
-  margin-top: -7px;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav-title
-{
-  float: left;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: var(--cor04);
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: center;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 60px 13px 10px;
-  text-decoration: none;
-  color: var(--cor00);
-}
-
-.nav > .nav-links > a:hover {
-  background-color: var(--cor02);
-}
-
-.nav > #nav-check {
-  display: none;
-}
-
-@media (max-width:1222px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
+  .nav {
     height: 50px;
-    padding: 13px;
+    padding-left: 10px;
+    width: 100%;
+    background-color: var(--cor07);
+    box-shadow: 8px 10px 14px var(--cor03);
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+    margin-top: -8px;
+    margin-right: 10px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: var(--cor01);
+  
+  .nav > .nav-header {
+    display: inline;
   }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid var(--cor00);
+  
+  .nav-title
+  {
+    float: left;
   }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: var(--cor04);
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
   .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-image: url(../Images/menu\ img.png);
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-    text-shadow: 1px 1px #ffffff;
+    display: inline;
+    float: center;
+    font-size: 1.8em;
   }
+  
   .nav > .nav-links > a {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    padding: 10px 25px 3px 10px;
+    text-decoration: none;
+    color: var(--cor08); 
+    font-family: var(--font-Pirata); 
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
+  
+  .nav > .nav-links > a:hover {
+    background-color: var(--cor02);
   }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+  
+  .nav > #nav-check {
+    display: none;
   }
-}
-
+  
+  @media (max-width:910px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: var(--cor07);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid var(--cor04);
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
 /* start-main */
 
 main{
   min-width: 300px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 20px;
-  background-color: var(--cor06);
+  background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper2.jpg);
+  background-size: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
 }
 
@@ -165,8 +176,9 @@ main h1, h2{
 }
 
 main h1{
-  color:var(--cor00);
-  font-size: 1.8em;
+  color:var(--cor01);
+  font-family: var(--font-Pirata);
+  font-size: 6em;
 }
 
 main h2{
@@ -192,57 +204,33 @@ main p{
   margin: 15px 0px;
   text-align: justify;
   text-indent: 2em;
-  font-size: 1em;
+  font-size: 2em;
   line-height: 1.5em;
+  color:var(--cor01);
 }
 
-main img{
-  width: 100%;
-}
-
-main img.pequena{
-  max-width: 350px;
-  display: block;
-  margin: auto;
-}
-
-p{
-  color:var(--cor04);
-}
 
 /* End-Main */
-
-
-
-
-/* Start-Aside */
-
-aside{
-  font-family: var(--font-padrao);
-  background-color: var(--cor01);
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
-}
-
-aside h3{
-  background-color: var(--cor04);
-  color: var(--cor06);
-  padding: 8px;
-  margin: -10px -10px 0px -10px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-aside ul{
-  list-style-type: '\2714\00A0';
-  list-style-position: inside;
-  columns: 2;
-}
+/* Start-Article */
 
 article ul{
+  font-size: 2em;
   text-align: left;
   list-style-position: inside;
-  color: var(--cor04);
+  color: var(--cor01);
+}
+.abas a{
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--cor07);
+}
+.link a{
+  font-family: var(--font-Normal);
+  color: var(--cor07);
+}
+
+.link p{
+  font-size: 2em;
 }
 /* End-Aside */
 

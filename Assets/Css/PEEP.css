@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body{
-    flex-direction: column;
-    font-family: 'Fredoka One', cursive;
-    background-color: var(--cor06);
-    text-align: center;
-    align-items: center;
-    margin-left: 0px;
+  flex-direction: column;
+  font-family: var(--font-Normal);
+  background-color: #181818;
+  text-align: center;
+  align-items: center;
+  margin-left: 0px;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 8px;
+    background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper.jpg);
+    
 }
 
 
@@ -23,6 +31,10 @@ main{
   --cor04: #ffffff;
   --cor05: #444444;
   --cor06: #181818;
+  --cor07: #1B0A06;
+  --cor08: #3E3226;
+  --font-Pirata: 'Pirata One', cursive;
+  --font-Normal: 'Josefin Sans', sans-serif;
 }
 
 
@@ -37,7 +49,7 @@ main{
 }
 
 ::-webkit-scrollbar-track{
-    background-color: var(--cor04); 
+  background-color: var(--cor08);  
 }
 
 ::-webkit-scrollbar-thumb{
@@ -59,13 +71,12 @@ html {
     height: 50px;
     padding-left: 10px;
     width: 100%;
-    background-color: var(--cor01);
-    box-shadow: 0px 3px 10px var(--cor00);
+    background-color: var(--cor07);
+    box-shadow: 8px 10px 14px var(--cor03);
     border-radius: 0px 0px 15px 15px;
     position: relative;
-    margin-top: -7px;
+    margin-top: -8px;
     margin-right: 10px;
-    
   }
   
   .nav > .nav-header {
@@ -91,15 +102,15 @@ html {
   .nav > .nav-links {
     display: inline;
     float: center;
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 9px 25px 8px 10px;
+    padding: 10px 25px 3px 10px;
     text-decoration: none;
-    color: var(--cor00);
-    font-family: var(--font-Lobster);
+    color: var(--cor08); 
+    font-family: var(--font-Pirata); 
   }
   
   .nav > .nav-links > a:hover {
@@ -124,7 +135,7 @@ html {
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: var(--cor01);
+      background-color: var(--cor07);
     }
     .nav > .nav-btn > label > span {
       display: block;
@@ -159,29 +170,31 @@ html {
 
 main{
   min-width: 300px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 20px;
-  background-color: var(--cor06);
+  background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper2.jpg);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
 }
 
 main h1, h2{
- 
+  font-family: var(--font-Pirata);
   font-weight: normal;
 }
 
 main h1{
-  color:var(--cor00);
-  font-size: 1.8em;
+  color:var(--cor01);
+  font-size: 5em;
   word-break: break-word;
+
 }
 
 main h2{
   color: var(--cor04);
+  font-size: 34px;
 }
 main h3{
   text-align: left;
@@ -202,11 +215,12 @@ main a:hover{
 }
 
 main p{
-  color: var(--cor04);
+  color: var(--cor01);
+  font-family: var(--font-Normal);
   margin: 15px 0px;
   text-align: justify;
   text-indent: 2em;
-  font-size: 1.2em;
+  font-size: 1.8em;
   line-height: 1.5em;
 }
 

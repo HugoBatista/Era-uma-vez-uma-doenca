@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body{
-    flex-direction: column;
-    font-family: 'Fredoka One', cursive;
-    background-color: var(--cor06);
-    text-align: center;
-    align-items: center;
-    margin-left: 0px;
+  flex-direction: column;
+  font-family: var(--font-Normal);
+  background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper3.jpg);
+  text-align: center;
+  align-items: center;
+  margin-left: 0px;
+  margin: 8px;
 }
 
 
@@ -23,18 +25,10 @@ main{
   --cor04: #ffffff;
   --cor05: #444444;
   --cor06: #181818;
-}
-
-h1{
-    text-align: center;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:visited {
-    color: var(--cor03);
+  --cor07: #1B0A06;
+  --cor08: #3E3226;
+  --font-Pirata: 'Pirata One', cursive;
+  --font-Normal: 'Josefin Sans', sans-serif;
 }
 
 ::-webkit-scrollbar{
@@ -43,7 +37,7 @@ a:visited {
 }
 
 ::-webkit-scrollbar-track{
-    background-color: var(--cor04); 
+    background-color: var(--cor08); 
 }
 
 ::-webkit-scrollbar-thumb{
@@ -65,11 +59,12 @@ html {
   height: 50px;
   padding-left: 10px;
   width: 100%;
-  background-color: var(--cor01);
-  box-shadow: 0px 3px 10px var(--cor00);
-  border-radius: 15px;
+  background-color: var(--cor07);
+  box-shadow: 8px 10px 14px var(--cor03);
+  border-radius: 0px 0px 15px 15px;
   position: relative;
-  margin-top: -7px;
+  margin-top: -8px;
+  margin-right: 10px;
 }
 
 .nav > .nav-header {
@@ -95,14 +90,15 @@ html {
 .nav > .nav-links {
   display: inline;
   float: center;
-  font-size: 18px;
+  font-size: 1.8em;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 60px 13px 10px;
+  padding: 10px 25px 3px 10px;
   text-decoration: none;
-  color: var(--cor00)
+  color: var(--cor08); 
+  font-family: var(--font-Pirata); 
 }
 
 .nav > .nav-links > a:hover {
@@ -113,7 +109,7 @@ html {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:910px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -127,7 +123,7 @@ html {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: var(--cor01);
+    background-color: var(--cor07);
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -139,7 +135,7 @@ html {
     position: absolute;
     display: block;
     width: 100%;
-    background-image: url(../Images/menu\ img.png);
+    background-image: url(/Mundo-das-drogas/Assets/Images/wallpaperbetter.jpg);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -159,3 +155,275 @@ html {
   }
 }
 
+main{
+  min-width: 300px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  background-image: url(/Era-uma-vez-uma-doenca/Assets/Images/Wallpaper5.jpg);
+  background-size: contain;
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+main h1, h2, h3{
+  font-family: var(--font-Pirata);
+  font-weight: normal;
+}
+
+main h1{
+  color:var(--cor01);
+  font-size: 6em;
+  word-break: break-word;
+}
+
+main h2{
+  font-size: 81px;
+  color: var(--cor01);
+}
+main h3{
+  font-size: 2em;
+  text-align: left;
+  color: var(--cor01);
+}
+
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor04);
+  padding: 2px 5px;
+  
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: var(--cor04);
+}
+
+main p{
+  font-family: var(--font-Normal);
+  color: var(--cor01);
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 1.8em;
+  line-height: 1.5em;
+}
+
+.quarentena{
+  max-width: 100%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+li{
+  font-family: var(--font-Normal);
+  text-align: left;
+  color: var(--cor01);
+  font-size: 1.8em;
+}
+
+table {
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+td, th {
+  border: 3px solid var(--cor03);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: var(--cor00);
+}
+
+tr:nth-child(odd) td {
+  background-color: var(--cor01);
+}
+
+table.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn{
+  float: left;
+  
+}
+.button{
+  font-family: var(--font-Rockwell-bold);
+  background-color: var(--cor08);
+  border-radius: 10px;
+  border: 0;
+  color: var(--cor03);
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button:hover{
+  background-color: var(--cor00);
+  border-radius: 10px;
+  border: dashed;
+}
+
+@media screen and (min-width:992px) {
+  :root {
+
+      /*=======> typography <=======*/
+      --big-font: 1.201rem;
+      --medium-font: 1.068rem;
+      --small-font: 0.949rem;
+  }
+}
+
+/*=======> RESET <=======*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/*=======> GENERAL <=======*/
+
+
+.container {
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*=======> LAYOUT <=======*/
+.accordion {
+  min-height: 60vh;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+
+.accordion__content {
+  max-width: 570px;
+  padding: 2rem;
+  background: var(--cor05);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.accordion__title {
+  font-size: 2em;
+  line-height: 150%;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.accordion__item {
+  border-radius: 6px;
+  margin-top: 8px;
+  background-color: #F3F3F3;
+  border-left: 4px solid #C1BEBB;
+}
+
+.item__header {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  padding: 1.25rem;
+  cursor: pointer;
+}
+
+.item__icon {
+  font-size: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.item__question {
+  font-size: var(--medium-font);
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.active .item__icon {
+  transform: rotate(180deg);
+}
+
+.active .item__question {
+  font-weight: 500;
+}
+
+/*=======> items color <=======*/
+.accordion__item:nth-of-type(1) {
+  background: #FFF8DF;
+  border-left-color: #FFC78F;
+}
+
+.accordion__item:nth-of-type(2) {
+  background: #F0FAFF;
+  border-left-color: #B4B3F2;
+}
+
+.accordion__item:nth-of-type(3) {
+  background: #FFEAED;
+  border-left-color: #F8B4BF;
+}
+
+.accordion__item:nth-of-type(4) {
+  background: #E5FAE2;
+  border-left-color: #B4E8AB;
+}
+
+.item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.item__answer {
+  line-height: 150%;
+  padding: 0 3.5rem;
+}
+
+p~p {
+  margin-top: 0.5rem;
+}
+
+.item__content :last-child {
+  margin-bottom: 1.25rem;
+}
+
+/*=======> MEDIAS QUERIES <=======*/
+@media screen and (min-width:992px) {
+  .container {
+      margin: 0 auto;
+  }
+
+  .item__header {
+      padding: 1.5rem;
+      column-gap: 1.5rem;
+  }
+
+  .item__answer {
+      padding: 0 4.5rem;
+  }
+  p~p {
+      margin-top: 0.5rem;
+  }
+  
+  .item__content :last-child {
+      margin-bottom: 1.5rem;
+  }
+
+}

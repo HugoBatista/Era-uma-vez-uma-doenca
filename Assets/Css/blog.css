@@ -433,7 +433,7 @@ p~p {
   display: grid;
   place-items: center;
 }
-
+ 
 .input-box{
   margin: 10px;
   background-color: var(--cor01);

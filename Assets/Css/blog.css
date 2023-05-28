@@ -427,3 +427,20 @@ p~p {
   }
 
 }
+.input-group{
+  min-height: 60vh;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+
+.input-box{
+  margin: 10px;
+  background-color: var(--cor01);
+  width: 300px;
+  height: 230px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+

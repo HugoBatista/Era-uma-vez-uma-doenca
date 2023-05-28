@@ -191,6 +191,7 @@ main a{
   text-decoration: none;
   font-weight: bold;
   color: var(--cor04);
+  font-family: var(--font-Pirata);
   padding: 2px 5px;
 }
 

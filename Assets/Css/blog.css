@@ -26,7 +26,7 @@ main{
   --cor05: #444444;
   --cor06: #181818;
   --cor07: #1B0A06;
-  --cor08: #3E3226;
+  --cor08: #C7A978;
   --font-Pirata: 'Pirata One', cursive;
   --font-Normal: 'Josefin Sans', sans-serif;
 }
@@ -437,7 +437,7 @@ p~p {
 .input-box{
   margin: 10px;
   background-color: var(--cor01);
-  width: 300px;
+  width: 600px;
   height: 377px;
   padding: 10px;
   text-align: center;
@@ -447,6 +447,7 @@ p~p {
 .input-box input {
   margin: 0.6rem 0;
   padding: 0.8rem 1.2rem;
+  width: 550px;
   border: none;
   border-radius: 10px;
   box-shadow: 1px 1px 6px #0000001c;
@@ -461,4 +462,8 @@ p~p {
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.textarea{
+  width: 555px;
 }
